@@ -1,0 +1,48 @@
+<div class="login-page"
+  style="background: url('assets/login4-bg-img.avif') no-repeat center center; background-size: cover; min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+  <div class="login-container">
+
+    <div class="form-section">
+      <h4>Sign Into Your Account</h4>
+      <form>
+        <div class="input-box">
+           <i class="fas fa-user"></i>
+          <input type="text" placeholder="Enter Your Username or Mobile Number" required>
+        </div>
+
+        
+        <div class="input-box">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="form-options">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot Password</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p class="register-link">Don't have an account? <a href="#">Register here</a></p>
+    </div>
+
+
+    <div class="image-section">
+      <h3 class="brand">Jodetx</h3>
+      <img src="assets/login4-bg.jpg" alt="Product" />
+
+      <div class="tab-switch">
+        <button [class.active]="activeTab === 'login'" (click)="switchTab('login')">LOGIN</button>
+
+        <button [class.active]="activeTab === 'register'" (click)="switchTab('register')">REGISTER</button>
+      </div>
+
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+      </div>
+
+    </div>
+  </div>
+</div>

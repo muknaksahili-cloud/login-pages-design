@@ -1,0 +1,145 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  width: 1000px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.form-section {
+  flex: 1;
+  padding: 50px;
+}
+
+.form-section h4 {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 16px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 15px 12px 45px; 
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+}
+
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #12d1c7;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.image-section {
+  flex: 1;
+  background: #111;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.brand {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+}
+
+.tab-switch {
+  position: absolute;
+  top: 50%;                 
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.tab-switch button {
+  border: none;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+    border-radius: 0 25px 25px 0;
+  transition: all 0.3s ease;
+}
+
+.tab-switch .active {
+  background: #12d1c7;
+  color: #fff;
+}
+
+
+.tab-switch button:not(.active) {
+  background: #fff;
+  color: #333;
+}
+
+.social-links {
+  position: absolute;
+  top: 50%;            
+  right: 0;            
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links a {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 25px 0 0 25px;
+}
+
+.social-links a:hover {
+  background: #12d1c7;
+}

@@ -1,0 +1,106 @@
+<div style="
+  background: url('assets/login5-bg.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #fff;
+">
+  <div class="overlay"></div>
+
+  <div class="container-fluid vh-100 d-flex align-items-center">
+    <div class="row w-100">
+
+      <div class="col-md-6 d-flex align-items-center">
+        <div id="loginCarousel" class="carousel slide w-100"  data-bs-ride="carousel" data-bs-interval="2000">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#loginCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#loginCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#loginCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+
+          <div class="carousel-inner text-center p-5">
+            <div class="carousel-item active">
+              <img src="assets/login5-img1.svg" class="img-fluid mt-3" width="500px" (click)="nextSlide()">
+              <h2 class="fw-bold">Open Account in Just 3 Minutes</h2>
+              <p>The fastest account opening in industry, start retirement planning in just 3 minutes.</p>
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/login5-img2.svg" class="img-fluid mt-3" width="500px" (click)="nextSlide()">
+              <h2 class="fw-bold">Secure Your Future</h2>
+              <p>Invest smartly and build wealth for a tension-free retirement life.</p>
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/login5-img1.svg" class="img-fluid mt-3" width="500px" (click)="nextSlide()">
+              <h2 class="fw-bold">Trusted by Millions</h2>
+              <p>National Pension System ensures transparency and safety for all investors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="card shadow-lg p-5 rounded-4" style="width: 100%; max-width: 500px;">
+          <div class="text-center mb-4">
+            <img src="assets/jodetx-logo.svg" alt="App Logo" style="width: 80px;">
+            <h5 class="mt-3">Welcome to Jodetx</h5>
+          </div>
+
+          <h4 class="fw-bold mb-3">Login</h4>
+
+          <form>
+            <div class="mb-3">
+              <label>Registered Email Address</label>
+              <input type="text" class="form-control p-2 mt-1" placeholder="Enter your email or phone number" />
+            </div>
+            <div class="mb-3">
+              <label>Password</label>
+              <input type="text" class="form-control p-2 mt-1" placeholder="Enter your password" />
+            </div>
+
+            <div class="mt-1">
+              <a href="/forgot-password" style="font-size: 14px; text-decoration: none;">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 p-2 fw-bold mt-1">
+              Log In
+            </button>
+
+            <div class="mt-1">
+              <p>
+                Don’t have an account with Jodetx?
+                <a href="/sign-up" class="text-primary" style="text-decoration:none;">Sign Up</a>
+              </p>
+
+            </div>
+
+            <div class="text-center my-3">or</div>
+
+            <button type="button" class="btn btn-outline-dark w-100 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 533.5 544.3" class="me-2">
+                <path fill="#4285F4"
+                  d="M533.5 278.4c0-17.4-1.5-34-4.4-50.2H272.1v95.1h147.3c-6.3 34-25 62.8-53.4 82v67h86.2c50.5-46.5 81.3-114.8 81.3-194z" />
+                <path fill="#34A853"
+                  d="M272.1 544.3c72.5 0 133.4-23.9 177.8-64.8l-86.2-67c-23.9 16-54.4 25.7-91.6 25.7-70.4 0-130-47.5-151.3-111.1h-89.2v69.6c44 87 134.8 148.6 240.5 148.6z" />
+                <path fill="#FBBC05"
+                  d="M120.8 327.1c-10.8-32-10.8-66.9 0-98.9v-69.6h-89.2C11.3 205.7 0 246.2 0 289s11.3 83.3 31.6 119.5l89.2-69.6z" />
+                <path fill="#EA4335"
+                  d="M272.1 107.7c39.5 0 75.2 13.6 103.3 40.2l77.2-77.2C405.5 24.3 344.6 0 272.1 0 166.4 0 75.6 61.6 31.6 169.5l89.2 69.6c21.3-63.6 80.9-111.4 151.3-111.4z" />
+              </svg>Continue with Google
+            </button>
+          </form>
+
+          <p class="mt-4 small text-center text-muted">
+            By continuing you agree to our
+            <a href="#" class="text-decoration-none">privacy policy</a> and
+            <a href="#" class="text-decoration-none">terms of use</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
