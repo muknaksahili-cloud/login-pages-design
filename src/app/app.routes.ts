@@ -16,28 +16,8 @@ export const routes: Routes = [
         component:Home
     },
     {
-        path: 'login1',
-        component:Login1
-    },
-    {
-        path: 'login2',
-        component:Login2
-    },
-    {
-        path: 'login3',
-        component:Login3
-    },
-    {
-        path: 'login4',
-        component:Login4
-    },
-    {
-        path: 'login5',
-        component:Login5
-    },
-    {
-        path: 'login6',
-        component:Login6
+        path: 'login',
+        loadChildren:() => import('./components/login/login-module').then(m => m.LoginModule)
     },
     {
         path: 'forgot-password',
