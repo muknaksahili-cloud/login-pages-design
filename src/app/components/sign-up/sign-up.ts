@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, Validators, FormGroup, FormBuilder } from '@angular/forms';
@@ -46,3 +47,16 @@ export class SignUp {
 }
 
 
+=======
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-sign-up',
+  imports: [],
+  templateUrl: './sign-up.html',
+  styleUrl: './sign-up.scss'
+})
+export class SignUp {
+
+}
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e

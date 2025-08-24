@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -7,15 +8,26 @@ import { ReactiveFormsModule } from '@angular/forms';
   selector: 'app-login-4',
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
+=======
+
+@Component({
+  selector: 'app-login-4',
+  imports: [],
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
   templateUrl: './login-4.html',
   styleUrl: './login-4.scss'
 })
 export class Login4 {
+<<<<<<< HEAD
   activeTab: 'login' | 'register' = 'login';
+=======
+   activeTab: 'login' | 'register' = 'login';
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
 
   switchTab(tab: 'login' | 'register') {
     this.activeTab = tab;
   }
+<<<<<<< HEAD
 
   userForm: FormGroup;
 
@@ -86,3 +98,6 @@ export class Login4 {
   }
 }
 
+=======
+}
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e

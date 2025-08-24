@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -8,10 +9,17 @@ import { ReactiveFormsModule } from '@angular/forms';
   selector: 'app-login-2',
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
+=======
+
+@Component({
+  selector: 'app-login-2',
+  imports: [],
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
   templateUrl: './login-2.html',
   styleUrl: './login-2.scss'
 })
 export class Login2 {
+<<<<<<< HEAD
    showPassword: boolean = false;
     togglePassword() {   
     this.showPassword = !this.showPassword;
@@ -85,3 +93,7 @@ export class Login2 {
   }
 }
 
+=======
+
+}
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e

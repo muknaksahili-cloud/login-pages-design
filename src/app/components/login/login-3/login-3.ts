@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -84,3 +85,15 @@ export class Login3 {
   }
 }
 
+=======
+
+@Component({
+  selector: 'app-login-3',
+  imports: [],
+  templateUrl: './login-3.html',
+  styleUrl: './login-3.scss'
+})
+export class Login3 {
+
+}
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e

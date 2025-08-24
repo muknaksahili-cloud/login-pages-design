@@ -1,13 +1,22 @@
+<<<<<<< HEAD
 import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+=======
+import { Component,  AfterViewInit, ElementRef, ViewChild  } from '@angular/core';
+
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
 declare var bootstrap: any;
 
 @Component({
   selector: 'app-login-5',
+<<<<<<< HEAD
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
+=======
+  imports: [],
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
   templateUrl: './login-5.html',
   styleUrls: ['./login-5.scss']
 })
@@ -17,7 +26,11 @@ export class Login5 implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.carousel = new bootstrap.Carousel(this.carouselElement.nativeElement, {
+<<<<<<< HEAD
       interval: 2000,
+=======
+      interval: 2000, 
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
       ride: 'carousel'
     });
   }
@@ -27,6 +40,7 @@ export class Login5 implements AfterViewInit {
       this.carousel.next();
     }
   }
+<<<<<<< HEAD
   userForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
@@ -96,3 +110,6 @@ export class Login5 implements AfterViewInit {
   }
 }
 
+=======
+}
+>>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
