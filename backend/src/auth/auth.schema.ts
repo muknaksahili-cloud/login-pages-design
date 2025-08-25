@@ -5,14 +5,15 @@ export type AuthDocument = Auth & Document;
 
 @Schema({ timestamps: true })
 export class Auth {
-    @Prop({ required: true})
+    @Prop({ required: true, unique:true})
     email: string;
 
     @Prop({ required: true})
     password: string;
 
-    @Prop ()
+    @Prop ({required: true, unique:true})
     phone: string;
 }
+
 
 export const AuthSchema = SchemaFactory.createForClass(Auth);

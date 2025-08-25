@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { BadRequestException, Injectable, NotFoundException, UnauthorizedException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Auth, AuthDocument } from './auth.schema';
 import { Model } from 'mongoose'
@@ -11,6 +11,16 @@ export class AuthService {
     ){}
 
     async createUser(data: Partial<Auth>): Promise<Auth>{
+      const existingUser = await this.authModel.findOne({email:data.email}).exec();
+      if(existingUser) {
+        throw new BadRequestException('Email already exists');
+      }
+
+         const existingPhone = await this.authModel.findOne({phone:data.phone}).exec();
+      if(existingPhone) {
+        throw new BadRequestException('Mobile Number already exists');
+      }
+
         const newUser = new this.authModel(data);
         return newUser.save();
     }
@@ -19,11 +29,11 @@ export class AuthService {
     const user = await this.authModel.findOne({ email }).exec();
 
     if (!user) {
-      throw new UnauthorizedException('Invalid email or password');
+      throw new NotFoundException('User not found');
     }
 
     if (user.password !== password) {
-      throw new UnauthorizedException('Invalid email or password');
+      throw new UnauthorizedException('Password  is incorrect');
     }
 
     return { message: 'User Login Successfully', user };
