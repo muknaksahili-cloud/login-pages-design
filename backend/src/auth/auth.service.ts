@@ -16,10 +16,10 @@ export class AuthService {
         throw new BadRequestException('Email already exists');
       }
 
-         const existingPhone = await this.authModel.findOne({phone:data.phone}).exec();
-      if(existingPhone) {
-        throw new BadRequestException('Mobile Number already exists');
-      }
+      //    const existingPhone = await this.authModel.findOne({phone:data.phone}).exec();
+      // if(existingPhone) {
+      //   throw new BadRequestException('Mobile Number already exists');
+      // }
 
         const newUser = new this.authModel(data);
         return newUser.save();

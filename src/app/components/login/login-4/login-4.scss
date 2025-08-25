@@ -9,10 +9,7 @@
 .login-container {
   display: flex;
   width: 1000px;
-<<<<<<< HEAD
   max-width: 95%;
-=======
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -22,10 +19,7 @@
 .form-section {
   flex: 1;
   padding: 50px;
-<<<<<<< HEAD
   min-width: 300px;
-=======
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
 }
 
 .form-section h4 {
@@ -48,21 +42,13 @@
 
 .input-box input {
   width: 100%;
-<<<<<<< HEAD
   padding: 12px 15px 12px 45px;
-=======
-  padding: 12px 15px 12px 45px; 
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
   border: 1px solid #ccc;
   border-radius: 25px;
   outline: none;
   font-size: 14px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
 .form-options {
   display: flex;
   justify-content: space-between;
@@ -91,43 +77,29 @@
   color: white;
   text-align: center;
   position: relative;
-<<<<<<< HEAD
   min-width: 300px;
-=======
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
 }
 
 .image-section img {
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
   object-fit: cover;
-=======
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
 }
 
 .brand {
   position: absolute;
   top: 20px;
   right: 20px;
-<<<<<<< HEAD
 }
 
 .brand .logo {
   height: 40px;
   width: auto;
-=======
-  font-weight: bold;
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
 }
 
 .tab-switch {
   position: absolute;
-<<<<<<< HEAD
   top: 50%;
-=======
-  top: 50%;                 
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -140,11 +112,7 @@
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-<<<<<<< HEAD
   border-radius: 0 25px 25px 0;
-=======
-    border-radius: 0 25px 25px 0;
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
   transition: all 0.3s ease;
 }
 
@@ -153,10 +121,6 @@
   color: #fff;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
 .tab-switch button:not(.active) {
   background: #fff;
   color: #333;
@@ -164,13 +128,8 @@
 
 .social-links {
   position: absolute;
-<<<<<<< HEAD
   top: 50%;
   right: 0;
-=======
-  top: 50%;            
-  right: 0;            
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -190,7 +149,6 @@
 .social-links a:hover {
   background: #12d1c7;
 }
-<<<<<<< HEAD
 
 
 .mobile-social-links {
@@ -243,5 +201,3 @@
     display: none !important;
   }
 }
-=======
->>>>>>> 7567bff22a4bbff8005ae8392f9c09803878177e

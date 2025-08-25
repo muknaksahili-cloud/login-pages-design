@@ -7,7 +7,7 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
 
-  @Post('create')
+  @Post('signup')
   async createUser(@Body() data: Partial<Auth>) {
     await this.authService.createUser(data);
     return { message: 'Signup successful' }; 

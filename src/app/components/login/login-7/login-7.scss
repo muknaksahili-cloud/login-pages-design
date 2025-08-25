@@ -1,71 +1,43 @@
-.login-container {
-      max-width: 1000px;
-      margin: 80px auto;
-      display: flex;
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
-    }
+.left {
+  background: #2c3e50;
 
-    .social-login {
-      background: rgba(17, 32, 70, 0.9);
-      color: #fff;
-      padding: 40px;
-      flex: 1;
-    }
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 
-    .social-login h2 {
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
+  .social-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
 
-    .social-btn {
-      width: 100%;
-      margin-bottom: 15px;
-      text-align: left;
-      font-weight: 500;
-    }
+    &.facebook { background: #3b5998; }
+    &.twitter { background: #1da1f2; }
+    &.google { background: #db4437; }
 
-    .social-btn i {
-      margin-right: 10px;
-    }
+    &:hover { opacity: 0.85; }
+  }
+}
 
-    .login-form {
-      flex: 1;
-      padding: 40px;
-    }
+.right {
+  .tabs span {
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
 
-    .login-form h5 {
-      text-transform: uppercase;
-      font-weight: bold;
-      color: #666;
-      margin-bottom: 20px;
-    }
+  .tabs .active {
+    color: #4a73f3;
+    border-bottom: 2px solid #4a73f3;
+    font-weight: 600;
+  }
+}
 
-    .form-control {
-      margin-bottom: 15px;
-      padding: 12px;
-    }
-
-    .btn-login {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      border-radius: 5px;
-      background: #4a6cf7;
-      border: none;
-      color: #fff;
-      font-weight: bold;
-    }
-
-    .btn-login:hover {
-      background: #2f4ed7;
-    }
-
-    .forgot {
-      float: right;
-      font-size: 14px;
-      color: #4a6cf7;
-      text-decoration: none;
-    }
+@media (max-width: 768px) {
+  .left {
+    text-align: center;
+    padding: 20px !important;
+  }
+}
